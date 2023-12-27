@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- make menue-->
+      <label for="menue">
+        <div></div>
+        <div></div>
+        <div></div>
+      </label>
+      <input type="radio" id="menue" name="menue" />
+      <input type="radio" name="menue" id="close" />
+      <div class="menue">
+        <nav>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">gallery</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#"> music</a></li>
+            <li><a href="#"> video</a></li>
+          </ul>
+        </nav>
+        <label for="close">&times;</label>
+      </div>
+      <!-- end make menue-->
+      <!--  make slider-->
+      <div class="slider">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/1.jpg" alt="war" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/2.jpg" alt="war" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/3.jpg" alt="war" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/4.jpg" alt="war" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- end make slider-->
+      <!--  make product -->
+      <div class="products">
+        <div class="product">
+          <h2>hiiiiiiiii</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            maxime maiores aut consequuntur nisi debitis dolorum, earum eius
+            consectetur id praesentium non, quasi quia. Porro, voluptatibus
+            quos? Voluptate, nisi cum.
+          </p>
+          <img src="./images/1.jpg" alt="" />
+          <a href="#">buy</a>
+        </div>
+        <div class="product">
+          <h2>hiiiiiiiii</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            maxime maiores aut consequuntur nisi debitis dolorum, earum eius
+            consectetur id praesentium non, quasi quia. Porro, voluptatibus
+            quos? Voluptate, nisi cum.
+          </p>
+
+          <img src="./images/1.jpg" alt="" />
+          <a href="#">buy</a>
+        </div>
+        <div class="product">
+          <h2>hiiiiiiiii</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            maxime maiores aut consequuntur nisi debitis dolorum, earum eius
+            consectetur id praesentium non, quasi quia. Porro, voluptatibus
+            quos? Voluptate, nisi cum.
+          </p>
+          <img src="./images/1.jpg" alt="" />
+          <a href="#">buy</a>
+        </div>
+      </div>
+      <!-- end make product -->
+    </div>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
